@@ -1,0 +1,49 @@
+.app {
+    overflow: hidden;
+}
+
+.header__container {
+    height: var(--header-height);
+    background-image: url("../images/work.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__navbar-logo {
+    display: block;
+    width: 80px;
+}
+
+.header__navbar-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.header__navbar-item {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: 34px;
+}
+
+.header__navbar-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header__navbar-item .header__navbar-link:hover {
+    color: var(--white-color);
+}
+
+.header__navbar-icon {
+    display: block;
+}
+
