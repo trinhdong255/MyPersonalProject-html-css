@@ -1,6 +1,10 @@
 :root {
     --white-color: #fff;
-    --header-height: 114vh;
+    --primary-color: #43e97b;
+    --black-color: #000;
+    --text-color: #333;
+    --header-height: 100vh;
+    --navbar-height: 80px;
 }
 
 * {
@@ -10,12 +14,36 @@
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Nunito", sans-serif;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
+@keyframes headerNavbar {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
