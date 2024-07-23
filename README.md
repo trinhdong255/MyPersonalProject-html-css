@@ -1,4 +1,4 @@
-**# MyFirstProject**# MyPersonalProject-html-css
+**# MyFirstProject**
 
 ## Introduce
 
