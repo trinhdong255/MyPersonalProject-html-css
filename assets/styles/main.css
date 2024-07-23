@@ -7,24 +7,26 @@
     background-image: url(../images/work.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
     background-position: center;
 }
 
-.header__navbar {
-    display: flex;
-    justify-content: center;
-    height: var(--navbar-height);
-}
-
-.header__navbar::before {
+.header__container::before {
     position: absolute;
     content: "";
     left: 0px;
     bottom: 0px;
     right: 0px;
     top: 0px;
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+
+/* Header Navar PC */
+.header__navbar {
+    display: flex;
+    justify-content: center;
+    height: var(--navbar-height);
 }
 
 .header__navbar-list {
@@ -69,7 +71,6 @@
     width: 182px;
     height: 138px;
     box-shadow: var(--box-shadow);
-    z-index: 1;
     padding: 18px 0px;
     border-radius: 2px;
     border-top: 3px solid var(--primary-color);
@@ -77,9 +78,10 @@
     display: none;
 }
 
+/* Cau noi navbar */
 .header__navbar-sublist::before {
-    content: "";
     position: absolute;
+    content: "";
     right: 104px;
     top: -18px;
     cursor: pointer;
@@ -110,6 +112,137 @@
     padding: 10px 20px;
 }
 
+
+/* Header Navbar Tablet And Mobile*/
+.header__navbar-tablet-mobile-btn {
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.header__navbar-tablet-mobile-icon-list {
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--white-color);
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.header__navbar-tablet-mobile-checkbox:checked~.nav__overlay-tablet-mobile {
+    display: block;
+}
+
+.header__navbar-tablet-mobile-checkbox:checked~.header__navbar-tablet-mobile {
+    z-index: 1;
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+
+.nav__overlay-tablet-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+
+.header__navbar-tablet-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    max-width: 100%;
+    background-color: var(--white-color);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.nav__tablet-mobile-close {
+    width: 28px;
+    height: 28px;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--white-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.header__navbar-tablet-mobile-list {
+    margin-top: 30px;
+}
+
+.header__navbar-tablet-mobile-item {
+    position: relative;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-right: 34px;
+    text-decoration: none;
+}
+
+.header__navbar-tablet-mobile-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--black-color);
+    text-decoration: none;
+    padding: 12px 0;
+}
+
+.header__navbar-tablet-mobile-link:hover {
+    color: var(--primary-color);
+    transition: all 0.5s ease 0s;
+}
+
+.header__navbar-tablet-mobile-icon-down {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.header__navbar-tablet-mobile-sublist {
+    position: absolute;
+    top: 30px;
+    left: -17px;
+    right: 0px;
+    background-color: var(--white-color);
+    width: 182px;
+    height: 138px;
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+    padding: 18px 0px;
+    border-radius: 2px;
+    border-top: 3px solid var(--primary-color);
+    animation: headerNavbar 0.2s linear;
+    display: none;
+}
+
+.header__navbar-tablet-mobile-subitem {
+    display: block;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.header__navbar-tablet-mobile-sublink {
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.header__navbar-tablet-mobile-item:hover .header__navbar-tablet-mobile-sublist {
+    display: block;
+}
+
+/* Header Title */
 .header__title {
     position: relative;
     margin-top: 200px;
@@ -139,4 +272,10 @@
     height: 2px;
     background-color: var(--primary-color);
     margin: 28px auto;
+}
+
+
+/* App Container */
+.app__container {
+    /* height: 360vh; */
 }
