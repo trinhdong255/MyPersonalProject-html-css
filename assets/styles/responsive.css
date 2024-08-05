@@ -13,7 +13,8 @@
     }
 
     .header__navbar-tablet-mobile-btn {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     
