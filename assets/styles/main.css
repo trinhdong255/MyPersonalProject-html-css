@@ -106,7 +106,7 @@
 
 .header__navbar-sublink {
     display: block;
-    color: var(--text-color);
+    color: var(--black-color);
     text-decoration: none;
     padding: 10px 20px;
 }
@@ -126,6 +126,7 @@
     transition: all 0.5s ease 0s;
 }
 
+/* Button close */
 .header__navbar-tablet-mobile-btn {
     margin-left: 8px;
     cursor: pointer;
@@ -150,6 +151,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     display: none;
     animation: fadeIn linear 0.3s;
+    z-index: 1;
 }
 
 .header__navbar-tablet-mobile-checkbox:checked ~ 
@@ -159,7 +161,7 @@
 
 .header__navbar-tablet-mobile-checkbox:checked ~ 
 .header__navbar-tablet-mobile {
-    z-index: 1;
+    z-index: 2;
     transform: translateX(0);
     opacity: 1;
     transition: all 0.5s ease 0s;
@@ -229,7 +231,7 @@
 
 .header__navbar-tablet-mobile-sublink {
     display: block;
-    color: var(--text-color);
+    color: var(--black-color);
     text-decoration: none;
     padding: 10px 20px;
 }
@@ -279,5 +281,198 @@
 
 /* App Container */
 .app__container {
-    height: 360vh;
+    background-color: #f5f5f5;
+}
+
+.avatar-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* About me */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 12px;
+}
+
+.about-me__info {
+    padding: 40px 0 12px 40px;
+}
+
+.about-me__info h2 {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-weight: 500;   
+    margin: 0;
+}
+
+.about-me__info span {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.about-me__info span::before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 30px 0;
+}
+
+.about-me__info p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 28px 0;
+}
+
+
+/* My skill */
+.my-skill {
+    padding: 100px 50px;
+    background-color: var(--white-color);
+}
+
+.my-skill__info h2 {
+    text-align: center;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.my-skill__info span {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
+
+.my-skill__info span::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 30px auto;
+    
+}
+
+.my-skill__info p {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 28px 0;
+}
+
+.my-skill__progress {
+    width: 100%;
+    margin: 26px 0;
+}
+
+.my-skill__progress h3 {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #333;
+}
+
+
+/* Progress */
+.progress-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.progress-per-html {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 80%;
+    border-radius: 6px;
+    background-color: #96bb7c;
+}
+
+.progress-per-css {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 73%;
+    border-radius: 6px;
+    background-color: #96bb7c;
+}
+
+.progress-per-design {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 60%;
+    border-radius: 6px;
+    background-color: #96bb7c;
+}
+
+.progress-per-bootstrap {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 30%;
+    border-radius: 6px;
+    background-color: #96bb7c;
+}
+
+.tooltip {
+    position: absolute;
+    right: -14px;
+    top: -30px;
+    border-radius: 2px; 
+    background-color: #96bb7c;
+    color: var(--white-color);
+    padding: 2px 4px;
+}
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #96bb7c transparent transparent transparent;
+}
+
+
+/* My resume */
+.my-resume {
+    padding: 100px 12px;
+}
+
+.my-resume h2 {
+        font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.my-resume__info h3 {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.img-workspace {
+    max-width: 100%;
+    height: auto;
 }

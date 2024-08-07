@@ -12,12 +12,12 @@
         display: none;
     }
 
+    /* Button close */
     .header__navbar-tablet-mobile-btn {
         display: flex;
         align-items: center;
     }
 
-    
 }
 
 

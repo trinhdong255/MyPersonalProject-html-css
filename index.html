@@ -72,8 +72,9 @@
                 <label for="nav-tablet-mobile-input" class="header__navbar-tablet-mobile-btn hide-on-pc">
                     <i class="header__navbar-tablet-mobile-icon-list fas fa-list"></i>
                 </label>
-                
-                <input type="checkbox" hidden id="nav-tablet-mobile-input" class="header__navbar-tablet-mobile-checkbox">
+
+                <input type="checkbox" hidden id="nav-tablet-mobile-input"
+                    class="header__navbar-tablet-mobile-checkbox">
 
                 <label for="nav-tablet-mobile-input" class="nav__overlay-tablet-mobile"></label>
 
@@ -92,14 +93,16 @@
                         <li class="header__navbar-tablet-mobile-item">
                             <a href="#" class="header__navbar-tablet-mobile-link">
                                 About
-                                <label for="nav-tablet-mobile-input-dropdown" class="header__navbar-tablet-mobile-btn hide-on-pc">
+                                <label for="nav-tablet-mobile-input-dropdown"
+                                    class="header__navbar-tablet-mobile-btn hide-on-pc">
                                     <i class="header__navbar-tablet-mobile-icon-down fa-solid fa-angle-down"></i>
                                 </label>
-    
+
                             </a>
-                            
-                            <input type="checkbox" hidden id="nav-tablet-mobile-input-dropdown" class="header__navbar-tablet-mobile-dropdown-checkbox">
-                            
+
+                            <input type="checkbox" hidden id="nav-tablet-mobile-input-dropdown"
+                                class="header__navbar-tablet-mobile-dropdown-checkbox">
+
                             <ul class="header__navbar-tablet-mobile-sublist">
                                 <li class="header__navbar-tablet-mobile-subitem">
                                     <a href="#" class="header__navbar-tablet-mobile-sublink">About Me</a>
@@ -150,7 +153,175 @@
         <!-- Main container -->
         <div class="app__container">
             <div class="grid wide">
-                
+                <div class="about-me row sm-gutter">
+                    <div class="col l-6 m-12 c-12">
+                        <img class="avatar-img" src="./assets/images/avatar.jpg" alt="Avatar">
+                    </div>
+
+                    <div class="col l-6 m-12 c-12">
+                        <div class="about-me__info">
+                            <h2>About Me</h2>
+                            <span>Who Am I?</span>
+                            <p>I am currently a student at Ho Chi Minh City University of Industry, a final year student
+                                preparing for an internship with no experience at all. So I want to do my own personal
+                                project after I finish the HTML and CSS course and I started doing my own personal
+                                project to both learn and expand new knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="my-skill row sm-gutter">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="my-skill__info">
+                            <h2>My Skill</h2>
+                            <span>What I Can Do?</span>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                the Semantics, a large language ocean.</p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
+                                your mouth.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-6 c-12">
+                        <div class="my-skill__progress">
+                            <h3>HTML</h3>
+                            <div class="progress-bar">
+                                <div class="progress-per-html">
+                                    <span class="tooltip">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-6 c-12">
+                        <div class="my-skill__progress">
+                            <h3>CSS</h3>
+                            <div class="progress-bar">
+                                <div class="progress-per-css">
+                                    <span class="tooltip">73%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-6 c-12">
+                        <div class="my-skill__progress">
+                            <h3>Design</h3>
+                            <div class="progress-bar">
+                                <div class="progress-per-design">
+                                    <span class="tooltip">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-6 c-12">
+                        <div class="my-skill__progress">
+                            <h3>Bootstrap</h3>
+                            <div class="progress-bar">
+                                <div class="progress-per-bootstrap">
+                                    <span class="tooltip">30%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid wide">
+                <div class="my-resume row sm-gutter">
+                    <div class="col l-6 m-6 c-12">
+                        <h2>Resume</h2>
+                        <div class="my-resume__info">
+                            <div class="my-resume__contact">
+                                <h3>Contact</h3>
+                                <div class="my-resume__contact-wrapper">
+                                    <div class="my-resume__contact-header">
+                                        <span>Contact Information</span>
+                                    </div>
+
+                                    <div class="my-resume__contact-content">
+                                        <section class="user-name">
+                                            <i class="user-name__icon fa-regular fa-user"></i>
+                                            <span class="user-name__title">
+                                                Name: Shrome
+                                            </span>
+                                        </section>
+
+                                        <section class="email-user">
+                                            <i class="fa-regular fa-envelope"></i>
+                                            <span class="email-user__title">
+                                                Email: john.doe@example.com
+                                            </span>
+                                        </section>
+
+                                        <section class="phone-user">
+                                            <i class="fa-solid fa-phone"></i>
+                                            <span class="phone-user__title">
+                                                Phone: (123) 456-7890
+                                            </span>
+                                        </section>
+
+                                        <section class="address-user">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="address-user__title">
+                                                Address: 1234 Elm Street, Hometown, ST 12345
+                                            </span>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="my-resume__education">
+                                <h3>Education</h3>
+                                <div class="my-resume__education-wrapper">
+                                    <div class="my-resume__education-header">
+                                        <span>School</span>
+                                    </div>
+
+                                    <div class="my-resume__education-content">
+                                        <section class="school-university">
+                                            <i class="fa-solid fa-graduation-cap"></i>
+                                            <span class="school-university__title">
+                                                University of Industry
+                                            </span>
+                                        </section>
+                                    </div>
+
+                                    <div class="my-resume__education-content">
+                                        <section class="school-university">
+                                            <i class="fa-solid fa-graduation-cap"></i>
+                                            <span class="school-university__title">
+                                                University of Industry
+                                            </span>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="my-resume__experience">
+                                <h3>Work Experience</h3>
+                                <div class="my-resume__experience-wrapper">
+                                    <div class="my-resume__experience-header">
+
+                                    </div>
+
+                                    <div class="my-resume__experience-content">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-6 c-12">
+                        <img class="img-workspace" src="./assets/images/workspace.jpg" alt="Workspace">
+                    </div>
+                </div>
             </div>
         </div>
 
