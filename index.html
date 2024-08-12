@@ -26,45 +26,45 @@
                 <nav class="header__navbar hide-on-mobile-and-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">Home</a>
+                            <a href="#Home" class="header__navbar-link">Home</a>
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
+                            <a href="#About-me" class="header__navbar-link">
                                 About
                                 <i class="header__navbar-icon fa-solid fa-angle-down"></i>
                             </a>
 
                             <ul class="header__navbar-sublist">
                                 <li class="header__navbar-subitem">
-                                    <a href="#" class="header__navbar-sublink">About Me</a>
+                                    <a href="#About-me" class="header__navbar-sublink">About Me</a>
                                 </li>
 
                                 <li class="header__navbar-subitem">
-                                    <a href="#" class="header__navbar-sublink">My Skill</a>
+                                    <a href="#My-skill" class="header__navbar-sublink">My Skill</a>
                                 </li>
 
                                 <li class="header__navbar-subitem">
-                                    <a href="#" class="header__navbar-sublink">My Resume</a>
+                                    <a href="#My-resume" class="header__navbar-sublink">My Resume</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">Work</a>
+                            <a href="#Work" class="header__navbar-link">Work</a>
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">Services</a>
+                            <a href="#Services" class="header__navbar-link">Services</a>
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">Blog</a>
+                            <a href="#Blog" class="header__navbar-link">Blog</a>
                         </li>
 
 
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">Contact</a>
+                            <a href="#Contact" class="header__navbar-link">Contact</a>
                         </li>
                 </nav>
 
@@ -87,11 +87,11 @@
 
                     <ul class="header__navbar-tablet-mobile-list">
                         <li class="header__navbar-tablet-mobile-item">
-                            <a href="#" class="header__navbar-tablet-mobile-link">Home</a>
+                            <a href="#Home" class="header__navbar-tablet-mobile-link">Home</a>
                         </li>
 
                         <li class="header__navbar-tablet-mobile-item">
-                            <a href="#" class="header__navbar-tablet-mobile-link">
+                            <a href="#About-me" class="header__navbar-tablet-mobile-link">
                                 About
                                 <label for="nav-tablet-mobile-input-dropdown"
                                     class="header__navbar-tablet-mobile-btn hide-on-pc">
@@ -105,34 +105,34 @@
 
                             <ul class="header__navbar-tablet-mobile-sublist">
                                 <li class="header__navbar-tablet-mobile-subitem">
-                                    <a href="#" class="header__navbar-tablet-mobile-sublink">About Me</a>
+                                    <a href="#About-me" class="header__navbar-tablet-mobile-sublink">About Me</a>
                                 </li>
 
                                 <li class="header__navbar-tablet-mobile-subitem">
-                                    <a href="#" class="header__navbar-tablet-mobile-sublink">My Skill</a>
+                                    <a href="#My-skill" class="header__navbar-tablet-mobile-sublink">My Skill</a>
                                 </li>
 
                                 <li class="header__navbar-tablet-mobile-subitem">
-                                    <a href="#" class="header__navbar-tablet-mobile-sublink">My Resume</a>
+                                    <a href="#My-resume" class="header__navbar-tablet-mobile-sublink">My Resume</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="header__navbar-tablet-mobile-item">
-                            <a href="#" class="header__navbar-tablet-mobile-link">Work</a>
+                            <a href="#Work" class="header__navbar-tablet-mobile-link">Work</a>
                         </li>
 
                         <li class="header__navbar-tablet-mobile-item">
-                            <a href="#" class="header__navbar-tablet-mobile-link">Services</a>
+                            <a href="#Services" class="header__navbar-tablet-mobile-link">Services</a>
                         </li>
 
                         <li class="header__navbar-tablet-mobile-item">
-                            <a href="#" class="header__navbar-tablet-mobile-link">Blog</a>
+                            <a href="#Blog" class="header__navbar-tablet-mobile-link">Blog</a>
                         </li>
 
 
                         <li class="header__navbar-tablet-mobile-item">
-                            <a href="#" class="header__navbar-tablet-mobile-link">Contact</a>
+                            <a href="#Contact" class="header__navbar-tablet-mobile-link">Contact</a>
                         </li>
                 </nav>
 
@@ -153,7 +153,7 @@
         <!-- Main container -->
         <div class="app__container">
             <div class="grid wide">
-                <div class="about-me row sm-gutter">
+                <div class="about-me row sm-gutter" id="About-me">
                     <div class="col l-6 m-12 c-12">
                         <img class="avatar-img" src="./assets/images/avatar.jpg" alt="Avatar">
                     </div>
@@ -171,8 +171,8 @@
                 </div>
             </div>
 
-            <div class="grid">
-                <div class="my-skill row sm-gutter">
+            <div class="grid wide">
+                <div class="my-skill row sm-gutter" id="My-skill">
                     <div class="col l-12 m-12 c-12">
                         <div class="my-skill__info">
                             <h2>My Skill</h2>
@@ -233,96 +233,271 @@
             </div>
 
             <div class="grid wide">
-                <div class="my-resume row sm-gutter">
-                    <div class="col l-6 m-6 c-12">
-                        <h2>Resume</h2>
-                        <div class="my-resume__info">
-                            <div class="my-resume__contact">
-                                <h3>Contact</h3>
-                                <div class="my-resume__contact-wrapper">
-                                    <div class="my-resume__contact-header">
-                                        <span>Contact Information</span>
-                                    </div>
+                <div class="my-resume row sm-gutter" id="My-resume">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="my-resume__container">
 
-                                    <div class="my-resume__contact-content">
-                                        <section class="user-name">
-                                            <i class="user-name__icon fa-regular fa-user"></i>
-                                            <span class="user-name__title">
-                                                Name: Shrome
-                                            </span>
-                                        </section>
+                            <h2>Resume</h2>
+                            <div class="my-resume__info">
+                                <div class="my-resume__education">
+                                    <h3>Education</h3>
+                                    <div class="my-resume__education-wrapper">
 
-                                        <section class="email-user">
-                                            <i class="fa-regular fa-envelope"></i>
-                                            <span class="email-user__title">
-                                                Email: john.doe@example.com
-                                            </span>
-                                        </section>
+                                        <div class="my-resume__education-content">
+                                            <div class="my-resume__education-high-school">
+                                                <section class="high-school">
+                                                    <i class="high-school__icon fas fa-school"></i>
+                                                    <span class="high-school__title">
+                                                        High School of Nam Viet
+                                                    </span>
+                                                </section>
 
-                                        <section class="phone-user">
-                                            <i class="fa-solid fa-phone"></i>
-                                            <span class="phone-user__title">
-                                                Phone: (123) 456-7890
-                                            </span>
-                                        </section>
+                                                <section class="high-school-calendar">
+                                                    <i class="high-school-calendar__icon fa-solid fa-calendar"></i>
+                                                    <span class="high-school-calendar__time">
+                                                        2017 - 2020
+                                                    </span>
+                                                </section>
+                                            </div>
+                                        </div>
 
-                                        <section class="address-user">
-                                            <i class="fa-solid fa-location-dot"></i>
-                                            <span class="address-user__title">
-                                                Address: 1234 Elm Street, Hometown, ST 12345
-                                            </span>
-                                        </section>
-                                    </div>
-                                </div>
-                            </div>
+                                        <div class="my-resume__education-content">
+                                            <div class="my-resume__education-university">
+                                                <section class="university">
+                                                    <i class="university__icon fa-solid fa-graduation-cap"></i>
+                                                    <span class="university__title">
+                                                        University of Industry
+                                                    </span>
+                                                </section>
 
-                            <div class="my-resume__education">
-                                <h3>Education</h3>
-                                <div class="my-resume__education-wrapper">
-                                    <div class="my-resume__education-header">
-                                        <span>School</span>
-                                    </div>
-
-                                    <div class="my-resume__education-content">
-                                        <section class="school-university">
-                                            <i class="fa-solid fa-graduation-cap"></i>
-                                            <span class="school-university__title">
-                                                University of Industry
-                                            </span>
-                                        </section>
-                                    </div>
-
-                                    <div class="my-resume__education-content">
-                                        <section class="school-university">
-                                            <i class="fa-solid fa-graduation-cap"></i>
-                                            <span class="school-university__title">
-                                                University of Industry
-                                            </span>
-                                        </section>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="my-resume__experience">
-                                <h3>Work Experience</h3>
-                                <div class="my-resume__experience-wrapper">
-                                    <div class="my-resume__experience-header">
-
-                                    </div>
-
-                                    <div class="my-resume__experience-content">
+                                                <section class="university-calendar">
+                                                    <i class="university-calendar__icon fa-solid fa-calendar"></i>
+                                                    <span class="university-calendar__title">
+                                                        2020 - 2024
+                                                    </span>
+                                                </section>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
+
+                                <div class="my-resume__experience">
+                                    <h3>Work Experience</h3>
+                                    <div class="my-resume__experience-wrapper">
+
+                                        <div class="my-resume__experience-content">
+                                            <div class="my-resume__experience-web-designer">
+                                                <section class="web-designer">
+                                                    <i class="web-designer__icon fa-solid fa-briefcase"></i>
+                                                    <span class="web-designer__title">
+                                                        Web Designer
+                                                    </span>
+                                                </section>
+
+                                                <section class="web-designer-calendar">
+                                                    <i class="web-designer-calendar__icon fa-solid fa-calendar"></i>
+                                                    <span class="web-designer-calendar__time">
+                                                        2021 - 2022
+                                                    </span>
+                                                </section>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-resume__experience-content">
+                                            <div class="my-resume__experience-front-end">
+                                                <section class="front-end">
+                                                    <i class="front-end__icon fa-solid fa-briefcase"></i>
+                                                    <span class="front-end__title">
+                                                        Front-End Developer
+                                                    </span>
+                                                </section>
+
+                                                <section class="front-end-calendar">
+                                                    <i class="front-end-calendar__icon fa-solid fa-calendar"></i>
+                                                    <span class="front-end-calendar__time">
+                                                        2022 - 2023
+                                                    </span>
+                                                </section>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-resume__experience-content">
+                                            <div class="my-resume__experience-back-end">
+                                                <section class="back-end">
+                                                    <i class="back-end__icon fa-solid fa-briefcase"></i>
+                                                    <span class="back-end__title">
+                                                        Back-End Developer
+                                                    </span>
+                                                </section>
+
+                                                <section class="back-end-calendar">
+                                                    <i class="back-end-calendar__icon fa-solid fa-calendar"></i>
+                                                    <span class="back-end-calendar__time">
+                                                        2023 - 2024
+                                                    </span>
+                                                </section>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
 
-                    <div class="col l-6 m-6 c-12">
+                    <div class="col l-6 m-12 c-12">
                         <img class="img-workspace" src="./assets/images/workspace.jpg" alt="Workspace">
                     </div>
                 </div>
             </div>
+
+            <div class="grid wide">
+               <div class="work row sm-gutter" id="Work">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="work__title">
+                            <h2>Our Works</h2>
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque,
+                                <br>
+                                delectus odio iure explicabo.
+                            </p>
+                        </div>
+                    </div>
+               </div>
+
+               <div class="work row sm-gutter">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="wrapper-img">
+                            <img class="media-img" src="./assets/images/picture-01.jpg" alt="Picture 01">    
+                            <div class="content">
+                                <h3>Picture 01</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>                    
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                         <div class="wrapper-img">
+                            <img class="media-img" src="./assets/images/picture-02.jpg" alt="Picture 02">    
+                            <div class="content">
+                                <h3>Picture 02</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>                    
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                         <div class="wrapper-img">
+                            <img class="media-img" src="./assets/images/picture-03.jpg" alt="Picture 03">    
+                            <div class="content">
+                                <h3>Picture 03</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>                    
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                         <div class="wrapper-img">
+                            <img class="media-img" src="./assets/images/picture-04.jpg" alt="Picture 04">    
+                            <div class="content">
+                                <h3>Picture 04</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>                    
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                         <div class="wrapper-img">
+                            <img class="media-img" src="./assets/images/picture-05.jpg" alt="Picture 0\5">    
+                            <div class="content">
+                                <h3>Picture 05</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>                    
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                         <div class="wrapper-img">
+                            <img class="media-img" src="./assets/images/picture-06.jpg" alt="Picture 06">    
+                            <div class="content">
+                                <h3>Picture 06</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>                    
+                        </div>
+                    </div>
+               </div>
+
+               <div class="work-wrapper row sm-gutter">
+                    <div class="col l-4 m-12 c-12">
+                        <img class="work-img" src="./assets/images/workspace.jpg" alt="Workspace">
+                    </div>
+
+                    <div class="col l-4 m-12 c-12">
+                        <div class="work-first-column">
+                            <div class="strategy">
+                                <section class="strategy-header">
+                                    <i class="strategy-header__icon fa-solid fa-umbrella" style="color: var(--white-color);"></i>
+                                    <h3>Strategy</h3>
+                                </section>
+                                
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt.
+                                </p>
+
+                                <a href="">Read More</a>
+                            </div>
+
+                            <div class="web-development">
+                                <section class="web-development-header">
+                                    <i class="web-development-header__icon fa-solid fa-code" style="color: var(--white-color);"></i>
+                                    <h3>Web Development</h3>
+                                </section>
+                                
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt.
+                                </p>
+
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-12 c-12">
+                        <div class="work-second-column">
+                            <div class="art-direction">
+                                <section class="art-direction-header">
+                                    <i class="art-direction-header__icon fa-solid fa-palette" style="color: var(--white-color);"></i>
+                                    <h3>Art Direction</h3>
+                                </section>
+                                
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt.
+                                </p>
+
+                                <a href="">Read More</a>
+                            </div>
+
+                            <div class="copy-writing">
+                                <section class="copy-writing-header">
+                                    <i class="copy-writing-header__icon fa-solid fa-pen" style="color: var(--white-color);"></i>
+                                    <h3>Copy Writing</h3>
+                                </section>
+                                
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt.
+                                </p>
+
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+
+            
         </div>
 
         <!-- Footer container -->

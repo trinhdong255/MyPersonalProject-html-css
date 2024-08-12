@@ -17,8 +17,7 @@
 }
 
 .col { /* Tạo rãnh ngăn cách ở giữa cột */
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 16px;
 }
 
 .c-0 { /* Mobile  */
@@ -283,8 +282,7 @@
     }
 
     .row.sm-gutter .col {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 16px;
     }
 
     .l-0 {
@@ -446,8 +444,7 @@
     }
 
     .wide .row.sm-gutter .col {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 16px;
     }
 
     .wide .l-0 {

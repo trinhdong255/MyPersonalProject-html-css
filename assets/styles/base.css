@@ -1,8 +1,11 @@
 :root {
     --white-color: #fff;
-    --primary-color: #43e97b;
     --black-color: #000;
     --text-color: #999;
+    --primary-color: #43e97b;
+    --progress-color: #96bb7c;
+    --icon-color: #29ADB2;
+    --separate-color: #e5e5e5;
     --box-shadow: 0 1px 3px rgba(255, 255, 255, 1);
     --header-height: 120vh;
     --navbar-height: 80px;
@@ -17,6 +20,11 @@ html {
     line-height: 1.6rem;
     font-family: "Nunito", sans-serif;
     box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--black-color);
+    color: var(--white-color);
 }
 
 /* Animation */
