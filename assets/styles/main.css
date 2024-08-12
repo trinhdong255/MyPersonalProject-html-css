@@ -261,7 +261,7 @@
     line-height: 5.2rem;
 }
 
-.header__title span {
+.header__title p {
     display: block;
     font-size: 2rem;
     font-weight: 400;
@@ -269,7 +269,7 @@
     text-align: center;
 }
 
-.header__title span::before {
+.header__title p::before {
     content: "";
     display: block;
     width: 180px;
@@ -1008,6 +1008,71 @@
     font-weight: 400;
     color: var(--white-color);
     margin: 0 0 0 16px;
+}
+
+
+/* Services */
+.services-title {
+    padding: 100px 12px 0 12px;
+}
+
+.services-title h2 {
+    text-align: center;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.services-header {
+    text-align: center; 
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-weight: 500; 
+    margin: 0;
+}
+
+.services-container {
+    padding: 80px 12px;
+}
+
+.services-development,
+.services-design,
+.services-eCommerce {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.services-development:hover,
+.services-design:hover,
+.services-eCommerce:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} 
+
+.services-development__icon,
+.services-design__icon,
+.services-eCommerce__icon {
+    font-size: 5rem;
+    color: var(--primary-color);
+} 
+
+.services-development h4,
+.services-design h4,
+.services-eCommerce h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.services-development p,
+.services-design p,
+.services-eCommerce p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 28px 0;
 }
 
 
