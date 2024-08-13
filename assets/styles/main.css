@@ -154,13 +154,11 @@
     z-index: 1;
 }
 
-.header__navbar-tablet-mobile-checkbox:checked ~ 
-.nav__overlay-tablet-mobile {
+.header__navbar-tablet-mobile-checkbox:checked~.nav__overlay-tablet-mobile {
     display: block;
 }
 
-.header__navbar-tablet-mobile-checkbox:checked ~ 
-.header__navbar-tablet-mobile {
+.header__navbar-tablet-mobile-checkbox:checked~.header__navbar-tablet-mobile {
     z-index: 2;
     transform: translateX(0);
     opacity: 1;
@@ -241,8 +239,7 @@
     transition: all 0.5s ease 0s;
 }
 
-.header__navbar-tablet-mobile-dropdown-checkbox:checked ~ 
-.header__navbar-tablet-mobile-sublist {
+.header__navbar-tablet-mobile-dropdown-checkbox:checked~.header__navbar-tablet-mobile-sublist {
     display: block;
 }
 
@@ -308,7 +305,7 @@
 .about-me__info h2 {
     font-size: 4.2rem;
     line-height: 4.2rem;
-    font-weight: 500;   
+    font-weight: 500;
     margin: 0;
 }
 
@@ -368,7 +365,7 @@
     height: 2px;
     background-color: var(--primary-color);
     margin: 30px auto;
-    
+
 }
 
 .my-skill__info p {
@@ -441,7 +438,7 @@
     position: absolute;
     right: -14px;
     top: -30px;
-    border-radius: 2px; 
+    border-radius: 2px;
     background-color: var(--progress-color);
     color: var(--white-color);
     padding: 2px 4px;
@@ -481,7 +478,8 @@
     margin: 16px 0;
 }
 
-.my-resume__education {
+.my-resume__education,
+.my-resume__experience {
     padding: 16px 0;
 }
 
@@ -494,253 +492,75 @@
     margin-top: 48px;
 }
 
-.my-resume__education h3 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: var(--primary-color);
-}
-
-.my-resume__education-wrapper {
-    border: 1px solid var(--separate-color);
-    border-radius: 4px;
-}
-
-.my-resume__education-wrapper:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.my-resume__education-content {
-    padding: 16px 30px;
-}
-
-.my-resume__education-high-school {
-    display: flex;
-    justify-content: space-between;
-}
-
-.high-school {
-    padding: 12px 0 8px;
-}
-
-.high-school__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.high-school__title {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
-.high-school-calendar {
-    padding: 12px 0 8px;
-}
-
-.high-school-calendar__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.high-school-calendar__time {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
-.my-resume__education-university {
-    display: flex;
-    justify-content: space-between;
-}
-
-.university {
-    padding: 2px 0 0;
-}
-
-.university__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.university__title {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
-.university-calendar {
-    padding: 2px 0 0;
-}
-
-.university-calendar__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.university-calendar__title {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
-.my-resume__experience {
-    padding: 16px 0;
-}
-
+.my-resume__education h3,
 .my-resume__experience h3 {
     font-size: 2.4rem;
     font-weight: 400;
     color: var(--primary-color);
-    margin-top: 16px;
 }
 
+.my-resume__education-wrapper,
 .my-resume__experience-wrapper {
     border: 1px solid var(--separate-color);
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
+.my-resume__education-wrapper:hover,
 .my-resume__experience-wrapper:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: linear 0.2s;
 }
 
+.my-resume__education-content,
 .my-resume__experience-content {
     padding: 16px 30px;
 }
 
-.my-resume__experience-web-designer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.web-designer {
-    padding: 12px 0 8px;
-}
-
-.web-designer__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.web-designer__title {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
-.web-designer-calendar {
-    padding: 12px 0 8px;
-}
-
-.web-designer-calendar__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.web-designer-calendar__time {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
-.my-resume__experience-front-end {
-    display: flex;
-    justify-content: space-between;
-}
-
-.front-end {
-    padding: 2px 0 0;
-}
-
-.front-end__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.front-end__title {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
-.front-end-calendar {
-    padding: 2px 0 0;
-}
-
-.front-end-calendar__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.front-end-calendar__time {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
-.my-resume__experience-front-end {
-    display: flex;
-    justify-content: space-between;
-}
-
-.front-end {
-    padding: 12px 0 8px;
-}
-
-.front-end__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.front-end__title {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
-.front-end-calendar {
-    padding: 12px 0 8px;
-}
-
-.front-end-calendar__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.front-end-calendar__time {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
+.my-resume__education-high-school,
+.my-resume__education-university,
+.my-resume__experience-web-designer,
+.my-resume__experience-front-end,
 .my-resume__experience-back-end {
     display: flex;
     justify-content: space-between;
 }
 
-.back-end {
-    padding: 12px 0 8px;
-}
-
-.back-end__icon {
-    font-size: 1.4rem;
-    color: var(--icon-color);
-}
-
-.back-end__title {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-left: 12px;
-}
-
+.high-school,
+.high-school-calendar,
+.university,
+.university-calendar,
+.web-designer,
+.web-designer-calendar,
+.front-end,
+.front-end-calendar,
+.back-end,
 .back-end-calendar {
     padding: 12px 0 8px;
 }
 
+.high-school__icon,
+.high-school-calendar__icon,
+.university__icon,
+.university-calendar__icon,
+.web-designer__icon,
+.web-designer-calendar__icon,
+.front-end__icon,
+.front-end-calendar__icon,
+.back-end__icon,
 .back-end-calendar__icon {
     font-size: 1.4rem;
     color: var(--icon-color);
 }
 
+.high-school__title,
+.high-school-calendar__time,
+.university__title,
+.university-calendar__time,
+.web-designer__title,
+.web-designer-calendar__time,
+.front-end__title,
+.front-end-calendar__time,
+.back-end__title,
 .back-end-calendar__time {
     font-size: 1.4rem;
     font-weight: 400;
@@ -818,6 +638,8 @@
     color: var(--white-color);
 }
 
+
+/* Work Wrapper */
 .work-wrapper {
     padding: 30px;
     background-color: var(--black-color);
@@ -830,150 +652,23 @@
     height: auto;
 }
 
-.work-first-column {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
+.work-first-column,
 .work-second-column {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-
-/* Strategy */
- .strategy {
-    margin: 20px 0 40px 20px;
- }
-
- .strategy p {
-    font-size: 1.6rem;
-    line-height: 3rem;
-    font-weight: 300;
-    color: var(--text-color);
-    margin: 28px 0;
- }
-
- .strategy a {
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: var(--white-color);
- }
-
- .strategy a:hover {
-    text-decoration: none;
- }
-
- .strategy-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
- }
-
- .strategy-header__icon {
-    font-size: 2.4rem;
-    color: var(--white-color)
- }
-
-.strategy-header h3 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: var(--white-color);
-    margin: 0 0 0 16px;
-}
-
-
-/* Web-Development */
-.web-development {
-    margin: 20px 0 40px 20px;
-}
-
-.web-development p {
-    font-size: 1.6rem;
-    line-height: 3rem;
-    font-weight: 300;
-    color: var(--text-color);
-    margin: 28px 0;
-}
-
-.web-development a {
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: var(--white-color);
-}
-
-.web-development a:hover {
-    text-decoration: none;
-}
-
-.web-development-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.web-development-header__icon {
-    font-size: 2.4rem;
-    color: var(--white-color);
-}
-
-.web-development-header h3 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: var(--white-color);
-    margin: 0 0 0 16px;
-}
-
-
-/* Art-Direction */
-.art-direction {
-    margin: 20px 0 40px 20px;
-}
-
-.art-direction p {
-    font-size: 1.6rem;
-    line-height: 3rem;
-    font-weight: 300;
-    color: var(--text-color);
-    margin: 28px 0;
-}
-
-.art-direction a {
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: var(--white-color);
-}
-
-.art-direction a:hover {
-    text-decoration: none;
-}
-
-.art-direction-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.art-direction-header__icon {
-    font-size: 2.4rem;
-    color: var(--white-color);
-}
-
-.art-direction-header h3 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: var(--white-color);
-    margin: 0 0 0 16px;
-}
-
-
-/* Copy-Writing */
+.strategy,
+.web-development,
+.art-direction,
 .copy-writing {
     margin: 20px 0 40px 20px;
 }
 
+.strategy p,
+.web-development p,
+.art-direction p,
 .copy-writing p {
     font-size: 1.6rem;
     line-height: 3rem;
@@ -982,27 +677,42 @@
     margin: 28px 0;
 }
 
+.strategy a,
+.web-development a,
+.art-direction a,
 .copy-writing a {
     font-size: 1.6rem;
     font-weight: 300;
     color: var(--white-color);
 }
 
+.strategy a:hover,
+.web-development a:hover,
+.art-direction a:hover,
 .copy-writing a:hover {
     text-decoration: none;
 }
 
+.strategy-header,
+.web-development-header,
+.art-direction-header,
 .copy-writing-header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
+.strategy-header__icon,
+.web-development-header__icon,
+.art-direction-header__icon,
 .copy-writing-header__icon {
     font-size: 2.4rem;
-    color: var(--white-color);
+    color: var(--white-color)
 }
 
+.strategy-header h3,
+.web-development-header h3,
+.art-direction-header h3,
 .copy-writing-header h3 {
     font-size: 2.4rem;
     font-weight: 400;
@@ -1025,10 +735,10 @@
 }
 
 .services-header {
-    text-align: center; 
+    text-align: center;
     font-size: 4.2rem;
     line-height: 4.2rem;
-    font-weight: 500; 
+    font-weight: 500;
     margin: 0;
 }
 
@@ -1049,20 +759,22 @@
 .services-design:hover,
 .services-eCommerce:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} 
+    transition: linear 0.2s;
+}
 
 .services-development__icon,
 .services-design__icon,
 .services-eCommerce__icon {
     font-size: 5rem;
     color: var(--primary-color);
-} 
+}
 
 .services-development h4,
 .services-design h4,
 .services-eCommerce h4 {
     font-size: 1.8rem;
     font-weight: 400;
+    margin: 28px 0;
 }
 
 .services-development p,
@@ -1075,4 +787,108 @@
     margin: 28px 0;
 }
 
+
+/* Pricing */
+.pricing-title {
+    padding: 100px 12px 0 12px;
+}
+
+.pricing-title h2 {
+    text-align: center;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pricing-container {
+    padding: 80px 12px;
+}
+
+.basic-plan,
+.beginner-plan,
+.premium-plan {
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.basic-plan:hover,
+.beginner-plan:hover,
+.premium-plan:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: linear 0.2s;
+}
+
+.basic-plan h4,
+.beginner-plan h4,
+.premium-plan h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 24px 0;
+}
+
+.basic-plan p,
+.beginner-plan p,
+.premium-plan p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 28px 0;
+}
+
+.basic-plan a,
+.beginner-plan a,
+.premium-plan a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+    display: block;
+    width: 100%;
+    padding: 16px 8px;
+    margin: 24px 0;
+}
+
+.basic-plan a:hover,
+.beginner-plan a:hover,
+.premium-plan a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transition: all 0.5s ease 0s;
+}
+
+.basic-plan__price,
+.beginner-plan__price,
+.premium-plan__price {
+    padding: 20px 0;
+}
+
+.basic-plan__price span:nth-child(1),
+.beginner-plan__price span:nth-child(1),
+.premium-plan__price span:nth-child(1) {
+    position: relative;
+    top: -20px;
+    font-size: 2.4rem;
+    color: var(--primary-color);
+}
+
+.basic-plan__price span:nth-child(2),
+.beginner-plan__price span:nth-child(2),
+.premium-plan__price span:nth-child(2) {
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+.basic-plan__price span:nth-child(3),
+.beginner-plan__price span:nth-child(3),
+.premium-plan__price span:nth-child(3) {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
 
