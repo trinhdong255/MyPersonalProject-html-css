@@ -18,16 +18,13 @@
         align-items: center;
     }
 
-    /* .my-resume {
-        display: flex;
-        flex-direction: column-reverse;
-    } */
+    
 }
 
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-   
+    
 }
 
 
