@@ -136,8 +136,7 @@
     }
 
     .col {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 16px;
     }
 
     .m-0 {

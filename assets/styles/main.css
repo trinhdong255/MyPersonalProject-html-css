@@ -155,11 +155,13 @@
     z-index: 1;
 }
 
-.header__navbar-tablet-mobile-checkbox:checked~.nav__overlay-tablet-mobile {
+.header__navbar-tablet-mobile-checkbox:checked~
+.nav__overlay-tablet-mobile {
     display: block;
 }
 
-.header__navbar-tablet-mobile-checkbox:checked~.header__navbar-tablet-mobile {
+.header__navbar-tablet-mobile-checkbox:checked~
+.header__navbar-tablet-mobile {
     z-index: 2;
     transform: translateX(0);
     opacity: 1;
@@ -207,6 +209,11 @@
     transition: all 0.5s ease 0s;
 }
 
+.header__navbar-tablet-mobile-link:active, .header__navbar-tablet-mobile-link:focus {
+    color: inherit;
+    background-color: transparent;
+}
+
 .header__navbar-tablet-mobile-icon-down {
     margin-left: 10px;
     font-size: 1.4rem;
@@ -240,7 +247,8 @@
     transition: all 0.5s ease 0s;
 }
 
-.header__navbar-tablet-mobile-dropdown-checkbox:checked~.header__navbar-tablet-mobile-sublist {
+.header__navbar-tablet-mobile-dropdown-checkbox:checked~
+.header__navbar-tablet-mobile-sublist {
     display: block;
 }
 
@@ -563,7 +571,7 @@
 .front-end-calendar__time,
 .back-end__title,
 .back-end-calendar__time {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     margin-left: 12px;
 }
@@ -773,7 +781,7 @@
 .services-development h4,
 .services-design h4,
 .services-eCommerce h4 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 400;
     margin: 28px 0;
 }
@@ -781,7 +789,7 @@
 .services-development p,
 .services-design p,
 .services-eCommerce p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.6rem;
     font-weight: 300;
     color: var(--text-color);
@@ -825,7 +833,7 @@
 .basic-plan h4,
 .beginner-plan h4,
 .premium-plan h4 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--primary-color);
     margin: 24px 0;
@@ -834,7 +842,7 @@
 .basic-plan p,
 .beginner-plan p,
 .premium-plan p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.6rem;
     font-weight: 300;
     color: var(--text-color);
@@ -896,7 +904,7 @@
 
 /* Blog */
 .blog-title {
-    padding: 100px 12px 0 12px;
+    padding: 16px;
 }
 
 .blog-title h2 {
@@ -919,16 +927,12 @@
 .blog-img img {
     max-width: 100%;
     height: auto;
-}
-
-.blog-title {
-    padding: 30px;
-    margin: 20px 0;
+    cursor: pointer;
 }
 
 .blog-title h3 {
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2rem;
     font-weight: 500;
     margin: 0;
 }
@@ -968,15 +972,15 @@
 }
 
 .blog-time span {
-    font-size: 1.4rem;
-    line-height: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
     font-weight: 400;
     margin-left: 12px;
 }
 
 .blog-comment a {
-    font-size: 1.4rem;
-    line-height: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
     font-weight: 400;
     color: var(--icon-color);
     text-decoration: none;
@@ -984,5 +988,153 @@
 }
 
 
+/* Contact */
+.contact-title {
+    padding: 100px 12px 0 12px;
+}
 
+.contact-title h2 {
+    text-align: center;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.contact-wrapper {
+    padding: 80px 12px;
+}
+
+.contact-form {
+    background-color: var(--white-color);
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.contact-form h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--black-color);
+    margin: 0 0 20px 0;
+}
+
+.contact-form button {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    padding: 16px 32px;
+    cursor: pointer;
+    margin: 28px 0;
+}
+
+.contact-form button:hover {
+    opacity: 0.8;
+    transition: all 0.5s ease 0s;
+}
+
+.contact-form-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form__first-name,
+.contact-form__last-name,
+.contact-form__email,
+.contact-form__message {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-name-label,
+.last-name-label,
+.email-label,
+.message-label {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--black-color);
+    margin: 12px 0;
+}
+
+.first-name-input,
+.last-name-input,
+.email-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 8px 0;
+}
+
+.first-name-input:focus,
+.last-name-input:focus,
+.email-input:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    transition: all 0.5s ease 0s;
+}
+
+.message-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 8px 0;
+}
+
+.contact-info {
+    padding: 30px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+}
+
+.contact-info h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--black-color);
+    margin: 0 0 20px 0;
+}
+
+.contact-info__wrapper {
+    padding: 12px;
+}
+
+.contact-info__location,
+.contact-info__phone,
+.contact-info__email {
+    display: block;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.contact-info__location:hover,
+.contact-info__phone:hover,
+.contact-info__email:hover {
+    opacity: 0.6;
+    transition: linear 0.2s;
+}
+
+.contact-info__location span,
+.contact-info__phone span,
+.contact-info__email span {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--icon-color);
+    margin-left: 12px;
+}
+
+.contact-info__location-icon,
+.contact-info__phone-icon,
+.contact-info__email-icon {
+    font-size: 1.4rem;
+    color: var(--icon-color);
+}
 

@@ -24,11 +24,70 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-    
+    .blog-time span {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+
+    }
+
+    .blog-comment a {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+
+    .blog-title h3 {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    .blog-title p {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
 }
 
 
 /* Mobile */
 @media (max-width: 739px) {
-    
+    .header__title h1 {
+        font-size: 3.8rem;
+    }
+
+    .header__title p,
+    .about-me__info p,
+    .my-skill__info p,
+    .work__title p,
+    .blog-title p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    .about-me__info h2,
+    .my-skill__info h2,
+    .my-resume h2,
+    .work__title h2,
+    .services-title h2,
+    .pricing-title h2,
+    .blog-title h2 {
+        font-size: 3.8rem;
+        line-height: 3.8rem;
+    }
+
+    .about-me__info span,
+    .my-skill__info span {
+        font-size: 1.8rem;
+    }
+
+    .my-resume__education h3, 
+    .my-resume__experience h3 {
+        font-size: 2.2rem;
+    }
+
+    .my-resume__education-high-school, 
+    .my-resume__education-university, 
+    .my-resume__experience-web-designer, 
+    .my-resume__experience-front-end, 
+    .my-resume__experience-back-end {
+        flex-direction: column;
+    }
 }
