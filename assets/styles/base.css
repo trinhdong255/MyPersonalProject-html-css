@@ -13,7 +13,8 @@
 
 * {
     box-sizing: inherit;
-    /* animation: refresh 0.8s ease; */
+    animation: refresh 0.8s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
