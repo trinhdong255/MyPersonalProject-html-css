@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="./assets/styles/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="icon" type="image/png" href="./assets/images/avatar.jpg">
     <title>My Profile Page</title>
 </head>
 
@@ -72,6 +73,7 @@
                         </li>
                 </nav>
 
+
                 <!-- Icon btn list -->
                 <label for="nav-tablet-mobile-input" class="header__navbar-tablet-mobile-btn hide-on-pc">
                     <i class="header__navbar-tablet-mobile-icon-list fas fa-list"></i>
@@ -81,6 +83,7 @@
                     class="header__navbar-tablet-mobile-checkbox">
 
                 <label for="nav-tablet-mobile-input" class="nav__overlay-tablet-mobile"></label>
+
 
                 <!-- Nav Tablet & Mobile -->
                 <nav class="header__navbar-tablet-mobile">
@@ -158,8 +161,11 @@
             </div>
         </header>
 
+
         <!-- Main container -->
         <div class="app__container">
+            
+            <!-- About me -->
             <div class="grid wide" id="About-me">
                 <div class="about-me row sm-gutter">
                     <div class="col l-6 m-12 c-12">
@@ -180,6 +186,7 @@
             </div>
 
 
+            <!-- My Skill -->
             <div class="grid wide" id="My-skill">
                 <div class="my-skill row sm-gutter">
                     <div class="col l-12 m-12 c-12">
@@ -242,6 +249,7 @@
             </div>
 
 
+            <!-- Resume -->
             <div class="grid wide" id="My-resume">
                 <div class="my-resume row sm-gutter">
                     <div class="col l-6 m-12 c-12">
@@ -364,17 +372,15 @@
             </div>
 
 
+            <!-- Work -->
             <div class="grid wide" id="Work">
                 <div class="work row sm-gutter">
                     <div class="col l-12 m-12 c-12">
-                        <div class="work__title">
+                        <div class="work-header">
                             <h2>Our Works</h2>
                             <br>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque,
-                                <br>
-                                delectus odio iure explicabo.
-                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque,</p>
+                            <p>delectus odio iure explicabo.</p>
                         </div>
                     </div>
                 </div>
@@ -517,10 +523,14 @@
             </div>
 
 
+            <!-- Services -->
             <div class="grid wide" id="Services">
-                <div class="services-title row sm-gutter">
+                <div class="services-header row sm-gutter">
                     <div class="col l-12 m-12 c-12">
                         <h2>Services</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque,</p>
+                        <p>delectus odio iure explicabo.</p>
                     </div>
                 </div>
 
@@ -561,10 +571,14 @@
             </div>
 
 
+            <!-- Pricing -->
             <div class="grid wide" id="Pricing">
-                <div class="pricing-title row sm-gutter">
+                <div class="pricing-header row sm-gutter">
                     <div class="col l-12 m-12 c-12">
                         <h2>Pricing & Packages</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque,</p>
+                        <p>delectus odio iure explicabo.</p>
                     </div>
                 </div>
 
@@ -620,25 +634,31 @@
             </div>
 
 
+            <!-- Blog -->
             <div class="grid wide" id="Blog">
-                <div class="blog-title row sm-gutter">
+                <div class="blog-header row sm-gutter">
                     <div class="col l-12 m-12 c-12">
                         <h2>Blog</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque,</p>
+                        <p>delectus odio iure explicabo.</p>
                     </div>
                 </div>
 
                 <div class="blog-container row sm-gutter">
-                    <div class="col l-6 m-6 c-12">
+                    <div class="col l-6 m-12 c-12">
                         <div class="blog-wrapper">
                             <div class="blog-img">
-                                <img src="./assets/images/blog.jpg" alt="Blog">
+                                <a href="#">
+                                    <img src="./assets/images/blog.jpg" alt="Blog">
+                                </a>
                             </div>
 
                             <div class="blog-title">
                                 <div class="blog-time-comment">
                                     <section class="blog-time">
                                         <i class="blog-time__icon fa-solid fa-calendar"></i>
-                                        <span>Jun 28, 2024</span>
+                                        <a href="#">Jun 28, 2024</a>
                                     </section>
 
                                     <section class="blog-comment">
@@ -647,7 +667,7 @@
                                     </section>
                                 </div>
 
-                                <h3>Tips About Creating A New Web Design</h3>
+                                <a href="#">Tips About Creating A New Web Design</a>
                                 <p>
                                     A small river named Duden flows by their place and supplies it with the necessary
                                     regelialia.
@@ -657,17 +677,19 @@
                         </div>
                     </div>
 
-                    <div class="col l-6 m-6 c-12">
+                    <div class="col l-6 m-12 c-12">
                         <div class="blog-wrapper">
                             <div class="blog-img">
-                                <img src="./assets/images/blog.jpg" alt="Blog">
+                                <a href="#">
+                                    <img src="./assets/images/blog.jpg" alt="Blog">
+                                </a>
                             </div>
 
                             <div class="blog-title">
                                 <div class="blog-time-comment">
                                     <section class="blog-time">
                                         <i class="blog-time__icon fa-solid fa-calendar"></i>
-                                        <span>Jun 28, 2024</span>
+                                        <a href="#">Jun 28, 2024</a>
                                     </section>
 
                                     <section class="blog-comment">
@@ -676,27 +698,29 @@
                                     </section>
                                 </div>
 
-                                <h3>Tips About Creating A New Web Design</h3>
+                                <a href="#">Tips About Creating A New Web Design</a>
                                 <p>
                                     A small river named Duden flows by their place and supplies it with the necessary
                                     regelialia.
                                 </p>
                             </div>
-                            
+
                         </div>
                     </div>
 
-                    <div class="col l-6 m-6 c-12">
+                    <div class="col l-6 m-12 c-12">
                         <div class="blog-wrapper">
                             <div class="blog-img">
-                                <img src="./assets/images/blog.jpg" alt="Blog">
+                                <a href="#">
+                                    <img src="./assets/images/blog.jpg" alt="Blog">
+                                </a>
                             </div>
 
                             <div class="blog-title">
                                 <div class="blog-time-comment">
                                     <section class="blog-time">
                                         <i class="blog-time__icon fa-solid fa-calendar"></i>
-                                        <span>Jun 28, 2024</span>
+                                        <a href="#">Jun 28, 2024</a>
                                     </section>
 
                                     <section class="blog-comment">
@@ -705,27 +729,29 @@
                                     </section>
                                 </div>
 
-                                <h3>Tips About Creating A New Web Design</h3>
+                                <a href="#">Tips About Creating A New Web Design</a>
                                 <p>
                                     A small river named Duden flows by their place and supplies it with the necessary
                                     regelialia.
                                 </p>
                             </div>
-                            
+
                         </div>
                     </div>
 
-                    <div class="col l-6 m-6 c-12">
+                    <div class="col l-6 m-12 c-12">
                         <div class="blog-wrapper">
                             <div class="blog-img">
-                                <img src="./assets/images/blog.jpg" alt="Blog">
+                                <a href="#">
+                                    <img src="./assets/images/blog.jpg" alt="Blog">
+                                </a>
                             </div>
 
                             <div class="blog-title">
                                 <div class="blog-time-comment">
                                     <section class="blog-time">
                                         <i class="blog-time__icon fa-solid fa-calendar"></i>
-                                        <span>Jun 28, 2024</span>
+                                        <a href="#">Jun 28, 2024</a>
                                     </section>
 
                                     <section class="blog-comment">
@@ -734,27 +760,29 @@
                                     </section>
                                 </div>
 
-                                <h3>Tips About Creating A New Web Design</h3>
+                                <a href="#">Tips About Creating A New Web Design</a>
                                 <p>
                                     A small river named Duden flows by their place and supplies it with the necessary
                                     regelialia.
                                 </p>
                             </div>
-                            
+
                         </div>
                     </div>
 
-                    <div class="col l-6 m-6 c-12">
+                    <div class="col l-6 m-12 c-12">
                         <div class="blog-wrapper">
                             <div class="blog-img">
-                                <img src="./assets/images/blog.jpg" alt="Blog">
+                                <a href="#">
+                                    <img src="./assets/images/blog.jpg" alt="Blog">
+                                </a>
                             </div>
 
                             <div class="blog-title">
                                 <div class="blog-time-comment">
                                     <section class="blog-time">
                                         <i class="blog-time__icon fa-solid fa-calendar"></i>
-                                        <span>Jun 28, 2024</span>
+                                        <a href="#">Jun 28, 2024</a>
                                     </section>
 
                                     <section class="blog-comment">
@@ -763,27 +791,29 @@
                                     </section>
                                 </div>
 
-                                <h3>Tips About Creating A New Web Design</h3>
+                                <a href="#">Tips About Creating A New Web Design</a>
                                 <p>
                                     A small river named Duden flows by their place and supplies it with the necessary
                                     regelialia.
                                 </p>
                             </div>
-                            
+
                         </div>
                     </div>
 
-                    <div class="col l-6 m-6 c-12">
+                    <div class="col l-6 m-12 c-12">
                         <div class="blog-wrapper">
                             <div class="blog-img">
-                                <img src="./assets/images/blog.jpg" alt="Blog">
+                                <a href="#">
+                                    <img src="./assets/images/blog.jpg" alt="Blog">
+                                </a>
                             </div>
 
                             <div class="blog-title">
                                 <div class="blog-time-comment">
                                     <section class="blog-time">
                                         <i class="blog-time__icon fa-solid fa-calendar"></i>
-                                        <span>Jun 28, 2024</span>
+                                        <a href="#">Jun 28, 2024</a>
                                     </section>
 
                                     <section class="blog-comment">
@@ -792,13 +822,13 @@
                                     </section>
                                 </div>
 
-                                <h3>Tips About Creating A New Web Design</h3>
+                                <a href="#">Tips About Creating A New Web Design</a>
                                 <p>
                                     A small river named Duden flows by their place and supplies it with the necessary
                                     regelialia.
                                 </p>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -808,31 +838,37 @@
 
             <div class="grid wide" id="Contact">
                 <div class="contact-title row sm-gutter">
-                   <div class="col l-12 m-12 c-12">
+                    <div class="col l-12 m-12 c-12">
                         <h2>Contact Me</h2>
-                   </div>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque,</p>
+                        <p>delectus odio iure explicabo.</p>
+                    </div>
                 </div>
 
                 <div class="contact-wrapper row sm-gutter">
                     <div class="col l-6 m-12 c-12">
                         <div class="contact-form">
                             <h2>Contact Form</h2>
-                            <form action="">
+                            <form action="#">
                                 <div class="contact-form-name">
                                     <div class="contact-form__first-name">
                                         <label class="first-name-label" for="first-name">First Name</label>
-                                        <input class="first-name-input" type="text" id="first-name" name="first-name" placeholder="Your First Name">
+                                        <input class="first-name-input" type="text" id="first-name" name="first-name"
+                                            placeholder="Your First Name">
                                     </div>
-    
+
                                     <div class="contact-form__last-name">
                                         <label class="last-name-label" for="last-name">Last Name</label>
-                                        <input class="last-name-input" type="text" id="last-name" name="last-name" placeholder="Your Last Name">
+                                        <input class="last-name-input" type="text" id="last-name" name="last-name"
+                                            placeholder="Your Last Name">
                                     </div>
-                                </div>                                
+                                </div>
 
                                 <div class="contact-form__email">
                                     <label class="email-label" for="email">Email</label>
-                                    <input class="email-input" type="email" id="email" name="email" placeholder="Your Email">
+                                    <input class="email-input" type="email" id="email" name="email"
+                                        placeholder="Your Email">
                                 </div>
 
                                 <div class="contact-form__message">
@@ -854,7 +890,7 @@
                                     <i class="contact-info__location-icon fa-solid fa-map-marker-alt"></i>
                                     <span>Ho Chi Minh City, Viet Nam</span>
                                 </a>
-                                
+
                                 <a href="#" class="contact-info__phone">
                                     <i class="contact-info__phone-icon fa-solid fa-phone"></i>
                                     <span>+84 123 456 789</span>
@@ -871,9 +907,73 @@
             </div>
         </div>
 
+
         <!-- Footer container -->
         <footer class="footer__container">
             <div class="grid wide">
+                
+                <div class="footer-info row sm-gutter">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-info__header">
+                            <h2>About Us</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-info__header">
+                            <h2>Features</h2>
+                            <a href="#">About Us</a>
+                            <a href="#">Services</a>
+                            <a href="#">Testimonials</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-info__header">
+                            <h2>Follow Us</h2>
+
+                            <div class="footer-info__wrapper-icon">
+                                <a href="#">
+                                    <i class="footer-info__header-icon fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="footer-info__header-icon fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="footer-info__header-icon fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="footer-info__header-icon fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-info__header">
+                            <h2>Subscribe Newsletter</h2>
+
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="email" placeholder="Enter your email">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-title row sm-gutter">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="footer-title">
+                            <p>Copyright @2024 by Shrome. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </footer>

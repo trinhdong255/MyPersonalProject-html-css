@@ -5,7 +5,6 @@
     }
 }
 
-
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
     .hide-on-mobile-and-tablet {
@@ -17,8 +16,6 @@
         display: flex;
         align-items: center;
     }
-
-    
 }
 
 
@@ -57,7 +54,12 @@
     .about-me__info p,
     .my-skill__info p,
     .work__title p,
-    .blog-title p {
+    .blog-title p,
+    .work-header p,
+    .services-header p,
+    .pricing-header p,
+    .blog-header p,
+    .contact-title p {
         font-size: 1.6rem;
         line-height: 2.6rem;
     }
@@ -68,7 +70,12 @@
     .work__title h2,
     .services-title h2,
     .pricing-title h2,
-    .blog-title h2 {
+    .blog-title h2,
+    .work-header h2,
+    .services-header h2,
+    .pricing-header h2,
+    .blog-header h2,
+    .contact-title h2 {
         font-size: 3.8rem;
         line-height: 3.8rem;
     }
@@ -78,16 +85,43 @@
         font-size: 1.8rem;
     }
 
-    .my-resume__education h3, 
+    .my-resume__education h3,
     .my-resume__experience h3 {
         font-size: 2.2rem;
     }
 
-    .my-resume__education-high-school, 
-    .my-resume__education-university, 
-    .my-resume__experience-web-designer, 
-    .my-resume__experience-front-end, 
+    .my-resume__education-high-school,
+    .my-resume__education-university,
+    .my-resume__experience-web-designer,
+    .my-resume__experience-front-end,
     .my-resume__experience-back-end {
         flex-direction: column;
+    }
+
+    .strategy-header__icon,
+    .web-development-header__icon,
+    .art-direction-header__icon,
+    .copy-writing-header__icon {
+        font-size: 2rem;
+    }
+
+    .strategy-header h3, 
+    .web-development-header h3, 
+    .art-direction-header h3, 
+    .copy-writing-header h3 {
+        font-size: 2rem;
+    }
+
+    .blog-title a {
+        line-height: 3rem;
+    }
+
+    .contact-form-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-title p {
+        font-size: 1.4rem;
     }
 }
